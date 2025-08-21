@@ -1,10 +1,7 @@
 "use client";
-import { useState } from "react";
+import { use, useEffect, useState } from "react";
 import { FileUploaderRegular } from "@uploadcare/react-uploader";
 import "@uploadcare/react-uploader/core.css";
-import { OneKPlusOutlined } from "@mui/icons-material";
-
-const pubKey = process.env.NEXT_PUBLIC_UPLOADCARE_PUBLIC_KEY;
 
 export default function Home() {
   const [files, setFiles] = useState([]);
