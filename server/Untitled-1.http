@@ -6,8 +6,8 @@ POST http://localhost:4000/upload
 Content-Type: multipart/form-data; boundary=WebAppBoundary
 
 --WebAppBoundary
-Content-Disposition: form-data; name="file"; filename="procuration.pdf"
-Content-Type: application/pdf
+Content-Disposition: form-data; name="file"; filename="procuration.PNG"
+Content-Type: image/pdf
 
-< /Users/williamswandji/Downloads/procuration.pdf
+< /Users/williamswandji/Downloads/procuration.pdf 
 --WebAppBoundary--
