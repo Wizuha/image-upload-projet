@@ -9,21 +9,23 @@ export default function Navbar() {
     <nav className="min-w-screen shadow-sm p-4 px-5 border-b-1 dark:bg-[#121826]">
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <Link href="/">
-            {theme === "dark" ? (
+          {theme === "dark" ? (
+            <Link
+              href="/"
+              className="flex items-center gap-2 font-bold text-sm"
+            >
               <img src="/logo-small.svg" alt="logo sombre" className="block" />
-            ) : (
-              <img src="/logo.svg" alt="logo" className="block" />
-            )}
-            <img
-              src="/logo-small.svg"
-              alt="logo sombre"
-              className="hidden dark:block"
-            />
-          </Link>
-          <Link href="/">
-            <a className="text-lg font-bold">Uploadcare</a>
-          </Link>
+              <p className="font-bold ">ImageUpload</p>
+            </Link>
+          ) : (
+            <Link
+              href="/"
+              className="flex items-center gap-2 font-bold text-sm"
+            >
+              <img src="/logo-small.svg" alt="logo sombre" className="block" />
+              <p className="font-bold ">ImageUpload</p>
+            </Link>
+          )}
         </div>
         <ModeToggle />
       </div>
